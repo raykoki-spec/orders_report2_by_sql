@@ -2,15 +2,15 @@
 
 # Nairobi Wholesale Distributor Customer-Record Analysis
 
-A Python script that automates summary generation which used to take the sales manager 45 minutes of manual summation in excel.
+A Python script that automates report of customer records with three key metrics for the sales manager.
 
 ## What It Does
-- Formats 3 clear questions which the sales manager asks every Monday morning
+- Formats 3 clear questions
 - Creates a summary indicating:
-      All orders indicating customer name alongside customer tier,
+      All orders showing customer name alongside customer tier,
       Total revenue for customers with more than 3 orders,
       Top customer per county.
-- All the questions are answered in form of table
+- Each question is answered in form of a table
 - Answer for question 2 indicates 'Empty DataFrame' since there is no customer with multiple orders
 ## Setup
 
@@ -22,12 +22,12 @@ pip install pandas
 
 Run the program from the project's folder where the database file(order.db) is saved. 
 ```
-python sql_query_script.py
+python customers.py
 ```
 
 ## How It Works
 
- Prints the orders summary using pandas read_sql_query.
+ Prints the customer report using pandas read_sql_query.
  
 ```python
 
@@ -53,5 +53,5 @@ Wafula Suppliers  Nairobi       112000
 
 ## Stack
 
-Python, SQL, Pandas, Numpy 
+Python, SQL, Pandas
 
